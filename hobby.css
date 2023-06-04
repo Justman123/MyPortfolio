@@ -1,0 +1,53 @@
+@keyframes vibration {
+    from {
+      transform: rotate(1deg);
+    }
+    to {
+      transform: rotate(-1deg);
+    }
+  }
+.hobby_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hobby_img
+{
+    margin-top : 150px;
+}
+.hobby_text
+{
+    margin-top : 70px;
+}
+.hobby_img img
+{
+    border-radius: 70%;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    box-shadow: 3px 3px 10px rgba(144, 129, 129, 0.164);
+}
+span
+{
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 600;
+    opacity: 0;
+    transition : all 2s;
+}
+
+.boxVibration {
+    animation: vibration 0.1s infinite;
+  }
+
+#detail
+{
+    opacity: 1;
+}
+#hobby_text
+{
+    margin-top: 60px;
+}
